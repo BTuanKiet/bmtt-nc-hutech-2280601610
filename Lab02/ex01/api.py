@@ -12,7 +12,7 @@ def caesar_encrypt():
     encrypted_text = caesar_cipher.encrypt_text(plain_text, key)
     return jsonify({'encrypted_text': encrypted_text})
 
-@app.route('/qpi/caesar/decrypt', methods=['POST'])
+@app.route('/api/caesar/decrypt', methods=['POST'])
 def caesar_decrypt():
     data = request.json
     cipher_text = data['cipher_text']
